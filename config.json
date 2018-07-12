@@ -1,0 +1,27 @@
+{
+    "serializer": "json",
+    "topology_specs": "topologies/",
+    "virtualenv_specs": "virtualenvs/",
+    "envs": {
+        "prod": {
+            "user": "",
+            "ssh_password": "",
+            "use_ssh_for_nimbus": false,
+            "use_virtualenv":true,
+            "virtualenv_name":"tempest",
+            "install_virtualenv":false,
+            "nimbus": "localhost",
+            "workers": [
+              "localhost"
+            ],
+            "log": {
+                "path": "/var/log/storm/streamparse/",
+                "file": "pystorm_{topology_name}_{component_name}_{task_id}_{pid}.log",
+                "max_bytes": 1000000,
+                "backup_count": 10,
+                "level": "info"
+            },
+            "virtualenv_root": "/data/virtualenvs/"
+        }
+    }
+}
