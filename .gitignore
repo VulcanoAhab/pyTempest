@@ -1,7 +1,7 @@
 #tempest
 dev_config.yaml
-spouts/*.py
-bolts/*.py
+src/spouts/*.py
+src/bolts/*.py
 _build/
 
 
